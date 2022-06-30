@@ -6,36 +6,32 @@ import africa.semicolon.mogbo.dto.Requests.LoginRequestDto;
 import africa.semicolon.mogbo.dto.Requests.RegisterUserRequest;
 import africa.semicolon.mogbo.dto.Response.LoginUserResponse;
 import africa.semicolon.mogbo.dto.Response.RegisterUserResponse;
+import africa.semicolon.mogbo.dto.exceptions.DuplicateEmailException;
+import africa.semicolon.mogbo.utils.Mapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.time.format.DateTimeFormatter;
-import java.util.List;
 import java.util.Objects;
 
 @Service
-public class UserServicesImpl implements UserServices{
-    @Autowired
-    private UserRepository userRepository;
+public class UserServicesImpl implements UserServices {
+
+    private final UserRepository userRepository;
+    private final PartyService partyService;
+
+    public UserServicesImpl( @Autowired UserRepository userRepository,PartyService partyService) {
+      this.userRepository=userRepository;
+      this.partyService=partyService;
+    }
 
     @Override
     public RegisterUserResponse registerUser(RegisterUserRequest request) {
-        User user= new User();
-        User foundUser = userRepository.findByEmail(request.getEmail());
-        if(foundUser!=null){
-            throw new IllegalArgumentException("User already exist");
-        }
-
-        user.setEmail(request.getEmail());
-        user.setFirstName(request.getFirstName());
-        user.setLastName(request.getLastName());
-        user.setPassword(request.getPassword());
-
+        if(userRepository.existsByEmail(request.getEmail()))
+            throw new DuplicateEmailException(request.getEmail()+"exist!!!");
+        User user = new User();
+        Mapper.map(request, user);
         User savedUser = userRepository.save(user);
         RegisterUserResponse response = new RegisterUserResponse();
-        response.setEmail(savedUser.getEmail());
-        response.setDateCreated(DateTimeFormatter.ofPattern("EEEE,dd/MM/yyy,hh:mm,a").format(savedUser.getDateTime()));
-
+        Mapper.map(savedUser,response);
         return response;
     }
 
@@ -52,4 +48,6 @@ public class UserServicesImpl implements UserServices{
 
         return new LoginUserResponse("Success");
     }
+
+
 }
