@@ -37,7 +37,7 @@ class UserServicesImplTest {
             registerFunmi();
         }
         catch (DuplicateEmailException exception){
-            assertEquals("funmi@email.com exists",exception.getMessage());
+            assertEquals("funmi@email.comexist!!!",exception.getMessage());
         }
     }
 

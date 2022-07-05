@@ -12,7 +12,6 @@ public class PartyServiceImpl implements PartyService {
 
     @Override
     public Party saveParty(Party party) {
-
         return party;
     }
 }

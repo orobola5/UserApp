@@ -5,28 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="422ab725-c389-4d16-8de5-8461b93ecd8e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Data/Model/Party.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Data/Repositories/PartyRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Services/PartyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Services/PartyServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/dto/Response/ApiResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/dto/exceptions/DuplicateEmailException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/utils/Mapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/africa/semicolon/mogbo/Data/Repositories/UserRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/africa/semicolon/mogbo/Services/UserServicesImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/dto/Requests/CreatePartyRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/dto/Response/createPartyResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/dto/exceptions/UserDoesNotExistException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Data/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Data/Model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Data/Repositories/PartyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Data/Repositories/PartyRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Data/Repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Data/Repositories/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Services/PartyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Services/PartyServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Services/UserServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Services/UserServices.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Services/UserServicesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Services/UserServicesImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/dto/Requests/RegisterUserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/dto/Requests/RegisterUserRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/dto/Response/ApiResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/dto/Response/ApiResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/africa/semicolon/mogbo/Services/UserServicesImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/africa/semicolon/mogbo/Services/UserServicesImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/africa/semicolon/mogbo/Data/Repositories/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/africa/semicolon/mogbo/Data/Repositories/UserRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/africa/semicolon/mogbo/Services/UserServicesImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/africa/semicolon/mogbo/Services/UserServicesImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/africa/semicolon/mogbo/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/africa/semicolon/mogbo/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/africa/semicolon/mogbo/Services/UserServicesTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +71,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="africa.semicolon.mogbo.Services" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -85,7 +82,7 @@
       <recent name="africa.semicolon.mogbo.Data.Repositories" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserServicesImplTest">
+  <component name="RunManager" selected="JUnit.UserServicesImplTest.duplicateEmailThrowsException">
     <configuration name="UserRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mogbo" />
       <extension name="coverage">
@@ -121,7 +118,7 @@
       <module name="mogbo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="africa.semicolon.mogbo.Services.*" />
+          <option name="PATTERN" value="africa.semicolon.mogbo.dto.Response.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,11 +129,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServicesImplTest.registerUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserServicesImplTest.duplicateEmailThrowsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mogbo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="africa.semicolon.mogbo.Services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="africa.semicolon.mogbo.Services" />
+      <option name="MAIN_CLASS_NAME" value="africa.semicolon.mogbo.Services.UserServicesImplTest" />
+      <option name="METHOD_NAME" value="duplicateEmailThrowsException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServicesImplTest.registerUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mogbo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="africa.semicolon.mogbo.dto.Response.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -148,26 +161,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="mogbo" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="africa.semicolon.mogbo.Main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="africa.semicolon.mogbo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserServicesImplTest.duplicateEmailThrowsException" />
         <item itemvalue="JUnit.UserServicesImplTest" />
         <item itemvalue="JUnit.UserServicesImplTest.registerUserTest" />
         <item itemvalue="JUnit.UserRepositoryTest.save" />
         <item itemvalue="JUnit.UserRepositoryTest" />
-        <item itemvalue="Spring Boot.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +186,7 @@
       <workItem from="1656276386839" duration="5315000" />
       <workItem from="1656339066087" duration="10570000" />
       <workItem from="1656500709588" duration="11014000" />
-      <workItem from="1656577331836" duration="16251000" />
+      <workItem from="1656577331836" duration="27394000" />
     </task>
     <task id="LOCAL-00001" summary="user project">
       <created>1656202881575</created>
@@ -209,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656275966705</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="user project">
+      <created>1656599788737</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1656599788737</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
