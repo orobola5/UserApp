@@ -5,22 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="422ab725-c389-4d16-8de5-8461b93ecd8e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/dto/Requests/CreatePartyRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/dto/Response/createPartyResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/dto/exceptions/UserDoesNotExistException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Data/Repositories/PartyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Data/Repositories/PartyRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Data/Repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Data/Repositories/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Services/PartyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Services/PartyServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Services/UserServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Services/UserServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Services/UserServicesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Services/UserServicesImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/dto/Requests/RegisterUserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/dto/Requests/RegisterUserRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/dto/Response/ApiResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/dto/Response/ApiResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/africa/semicolon/mogbo/Services/UserServicesImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/africa/semicolon/mogbo/Services/UserServicesImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/africa/semicolon/mogbo/Data/Repositories/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/africa/semicolon/mogbo/Data/Repositories/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/africa/semicolon/mogbo/Services/UserServicesImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/africa/semicolon/mogbo/Services/UserServicesImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/africa/semicolon/mogbo/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/africa/semicolon/mogbo/controller/UserController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,6 +173,9 @@
       <workItem from="1656339066087" duration="10570000" />
       <workItem from="1656500709588" duration="11014000" />
       <workItem from="1656577331836" duration="27394000" />
+      <workItem from="1657041254820" duration="1971000" />
+      <workItem from="1657291815148" duration="2931000" />
+      <workItem from="1657358458237" duration="92000" />
     </task>
     <task id="LOCAL-00001" summary="user project">
       <created>1656202881575</created>
@@ -216,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656599788737</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="user project">
+      <created>1657041370502</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1657041370502</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,5 +232,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="user project" />
     <option name="LAST_COMMIT_MESSAGE" value="user project" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/africa/semicolon/mogbo/Services/UserServicesImpl.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

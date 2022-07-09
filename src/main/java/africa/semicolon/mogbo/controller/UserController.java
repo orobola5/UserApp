@@ -2,6 +2,7 @@ package africa.semicolon.mogbo.controller;
 
 import africa.semicolon.mogbo.Services.UserServices;
 import africa.semicolon.mogbo.Services.UserServicesImpl;
+import africa.semicolon.mogbo.dto.Requests.CreatePartyRequest;
 import africa.semicolon.mogbo.dto.Requests.LoginRequestDto;
 import africa.semicolon.mogbo.dto.Requests.RegisterUserRequest;
 import africa.semicolon.mogbo.dto.Response.ApiResponse;
@@ -37,6 +38,17 @@ public class UserController {
     @PostMapping("/login")
     public LoginUserResponse loginUser(@RequestBody LoginRequestDto loginRequestDto){
         return userServices.loginUser(loginRequestDto);
+    }
+    @PostMapping("/createEvent")
+    public ResponseEntity <?> createEvent(@RequestBody CreatePartyRequest request){
+        try {
+            var serviceResponse = userServices.addParty(request);
+            ApiResponse response = new ApiResponse(true, serviceResponse);
+            return new ResponseEntity<>(response, HttpStatus.CREATED);
+        }catch (Exception ex){
+            ApiResponse response = new ApiResponse(false, ex.getMessage());
+            return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
+        }
     }
 
 }
